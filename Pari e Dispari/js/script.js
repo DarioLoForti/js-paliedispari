@@ -26,3 +26,18 @@ function Somma(n_1, n_2){
 }
 Somma(numberUser, numberPc);
 console.log(result);
+
+//  5 - stabilisco se la somma è un numero pari o dispari.
+function pari_o_dispari(Result){
+
+    if(Result % 2 == 0 ){
+        console.log("Pari");
+    }
+    else{
+        console.log("dispari")
+    }
+    
+}
+
+pari_o_dispari(result);
+
