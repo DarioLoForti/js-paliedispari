@@ -46,12 +46,10 @@ let risultato = pari_o_dispari(result);
 
 // 6 - dichiaro il vincitore
 
-if(risultato && pariDispari == risultato){
+if(pariDispari == risultato){
     console.log("User win");
 }
-else if(risultato && pariDispari == risultato){
-    console.log("User win");
-}
+
 else{
     console.log("PC win")
 }
