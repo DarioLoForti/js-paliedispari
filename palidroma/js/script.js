@@ -8,16 +8,16 @@ function palidroma(text){
 
     // tramite ciclo for confronto i caratteri della parola inserita dall'utente con il reverse
 
-    for(let i=0; i<text.length; i++){ 
-        let reverseText = (text.split('').reverse().join(''));
+    
+    let reverseText = (text.split('').reverse().join(''));
 
-        if(parola == reverseText){
-            console.log(`${parola} "La parola è palindroma"`);
-        }
-        else{
-            console.log(`${parola} "La parola non è palindroma"`);
-        }
+    if(text == reverseText){
+        console.log(`${text} "La parola è palindroma"`);
     }
+    else{
+        console.log(`${text} "La parola non è palindroma"`);
+    }
+    
     
 }
 

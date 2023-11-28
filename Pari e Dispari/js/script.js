@@ -22,31 +22,34 @@ console.log(numberPc);
 let result = 0;
 
 function Somma(n_1, n_2){
-    result = n_1 + n_2;
+    return n_1 + n_2;
 }
-Somma(numberUser, numberPc);
+
+result = Somma(numberUser, numberPc);
 console.log(result);
 
 //  5 - stabilisco se la somma è un numero pari o dispari.
+
 function pari_o_dispari(som){
 
     if(som % 2 == 0 ){
         console.log("Pari");
+        return "pari"
     }
     else{
         console.log("dispari")
+        return "dispari"
     }
-    
 }
 
-pari_o_dispari(result);
+let risultato = pari_o_dispari(result);
 
 // 6 - dichiaro il vincitore
 
-if(result % 2 == 0 && pariDispari == "pari"){
+if(risultato && pariDispari == risultato){
     console.log("User win");
 }
-else if(result % 2 != 0 && pariDispari == "dispari"){
+else if(risultato && pariDispari == risultato){
     console.log("User win");
 }
 else{
