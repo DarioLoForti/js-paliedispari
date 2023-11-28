@@ -6,7 +6,7 @@ console.log(pariDispari);
 // 2 - chiedo all'utende ti scegliere un numero tra 1 e 5
 
 let numberUser = parseInt(prompt("inserisci un numero da 1 a 5"));
-console.log(numberUser);
+console.log(`USER ${numberUser}`);
 // console.log(pariDispari, numberUser);
 
 // 3 - genero un numero random da 1 a 5 per il pc
@@ -15,7 +15,7 @@ function numberRandom(){
 }
 
 let numberPc = numberRandom();
-console.log(numberPc);
+console.log(`PC ${numberPc}`);
 
 
 // 4 - sommo i numeri ( inseriti dall'utente e generato random per il pc)
@@ -26,18 +26,18 @@ function Somma(n_1, n_2){
 }
 
 result = Somma(numberUser, numberPc);
-console.log(result);
+console.log(`SOMMA ${result}`);
 
 //  5 - stabilisco se la somma è un numero pari o dispari.
 
 function pari_o_dispari(som){
 
     if(som % 2 == 0 ){
-        console.log("Pari");
+        console.log(`${result} è Pari`);
         return "pari"
     }
     else{
-        console.log("dispari")
+        console.log(`${result} è Dispari`)
         return "dispari"
     }
 }
