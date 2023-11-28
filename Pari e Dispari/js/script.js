@@ -7,7 +7,7 @@ console.log(pariDispari);
 
 let numberUser = parseInt(prompt("inserisci un numero da 1 a 5"));
 console.log(numberUser);
-console.log(pariDispari, numberUser);
+// console.log(pariDispari, numberUser);
 
 // 3 - genero un numero random da 1 a 5 per il pc
 function numberRandom(){
@@ -17,3 +17,12 @@ function numberRandom(){
 let numberPc = numberRandom();
 console.log(numberPc);
 
+
+// 4 - sommo i numeri ( inseriti dall'utente e generato random per il pc)
+let result = 0;
+
+function Somma(n_1, n_2){
+    result = n_1 + n_2;
+}
+Somma(numberUser, numberPc);
+console.log(result);
