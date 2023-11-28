@@ -28,9 +28,9 @@ Somma(numberUser, numberPc);
 console.log(result);
 
 //  5 - stabilisco se la somma è un numero pari o dispari.
-function pari_o_dispari(Result){
+function pari_o_dispari(som){
 
-    if(Result % 2 == 0 ){
+    if(som % 2 == 0 ){
         console.log("Pari");
     }
     else{
@@ -41,3 +41,14 @@ function pari_o_dispari(Result){
 
 pari_o_dispari(result);
 
+// 6 - dichiaro il vincitore
+
+if(result % 2 == 0 && pariDispari == "pari"){
+    console.log("User win");
+}
+else if(result % 2 != 0 && pariDispari == "dispari"){
+    console.log("User win");
+}
+else{
+    console.log("PC win")
+}
